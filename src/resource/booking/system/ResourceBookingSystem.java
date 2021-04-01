@@ -25,7 +25,7 @@ public class ResourceBookingSystem {
         try {
             while (x = true) {
                 System.out.println("Hello, what would you like to do");
-                System.out.println("create a booking(1), view a booking(2), catering staff refreshments (3), delete a booking(4), exit the software (0)");
+                System.out.println("create a booking(1), view a booking(2), catering staff bookings (3), delete a booking(4), edit a booking(5 exit the software (0)");
                 int choosesoftware = input.nextInt();
                 while (choosesoftware < 0 || choosesoftware > 4) {
                     System.out.println("An error was detected please input another software choice please ");
@@ -36,7 +36,17 @@ public class ResourceBookingSystem {
                         createabooking();
                         break;
                     case 2:
-                        searchForEmail();
+                        if(listofpeople.isEmpty()){
+                            System.out.println("No bookings have been made");
+                        }
+                        for (int i = 0; i < listofpeople.size(); i++) {
+                                System.out.println(i + ") First Name: " + listofpeople.get(i).getFname() + ", "
+                                        + "Surname: " + listofpeople.get(i).getLname() + ", "
+                                        + "Refreshments: " + listofpeople.get(i).getRefreshments() + ", "
+                                        + "Equipment: " + listofpeople.get(i).getResources() + ", "
+                                        + "Date of booking: " + listofpeople.get(i).getCurrentBooking());
+                                // Didn't think catering staff should have access to email
+                            }
                         break;
                     case 3:
                         System.out.println("Catering Staff to See when you are needed please enter (Password)");
@@ -60,6 +70,8 @@ public class ResourceBookingSystem {
                     case 4:
                         deleteBooking();
                         break;
+                    case 5:
+                        editBook();
                     case 0:
                         exit();
                         break;
