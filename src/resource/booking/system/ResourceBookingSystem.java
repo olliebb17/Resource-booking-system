@@ -206,7 +206,7 @@ public class ResourceBookingSystem {
                 String booking1 = YtoS + MtoS + DtoS + "10:30";
                 String booking2 = YtoS + MtoS + DtoS + "14:30";
                 String booking3 = YtoS + MtoS + DtoS + "17:00";
-                if (room1time.contains(booking1) & room1time.contains(booking2) & room1time.contains(booking3)) {
+                if (room1time.contains(booking1) || room1time.contains(booking2) || room1time.contains(booking3)) {
                     System.out.println("unfortunately the date and time has already been booked please enter in a new time and date");
                     System.out.println("The booking software will reset, and you will need to enter your details again, Sorry, Thank you");
                     createabooking();
@@ -457,7 +457,7 @@ public class ResourceBookingSystem {
                 String booking1 = YtoS + MtoS + DtoS + "10:30";
                 String booking2 = YtoS + MtoS + DtoS + "14:30";
                 String booking3 = YtoS + MtoS + DtoS + "17:00";
-                if (room2time.contains(booking1) & room1time.contains(booking2) & room1time.contains(booking3)) {
+                if (room2time.contains(booking1) || room1time.contains(booking2) || room1time.contains(booking3)) {
                     System.out.println("unfortunately the date and time has already been booked please enter in a new time and date");
                     System.out.println("The booking software will reset, and you will need to enter your details again, Sorry, Thank you");
                     createabooking();
@@ -709,7 +709,7 @@ public class ResourceBookingSystem {
                 String booking1 = YtoS + MtoS + DtoS + "10:30";
                 String booking2 = YtoS + MtoS + DtoS + "14:30";
                 String booking3 = YtoS + MtoS + DtoS + "17:00";
-                if (room3time.contains(booking1) & room3time.contains(booking2) & room3time.contains(booking3)) {
+                if (room3time.contains(booking1) || room3time.contains(booking2) || room3time.contains(booking3)) {
                     System.out.println("unfortunately the date and time has already been booked please enter in a new time and date");
                     System.out.println("The booking software will reset, and you will need to enter your details again, Sorry, Thank you");
                     createabooking();
@@ -958,7 +958,7 @@ public class ResourceBookingSystem {
                 String booking1 = YtoS + MtoS + DtoS + "10:30";
                 String booking2 = YtoS + MtoS + DtoS + "14:30";
                 String booking3 = YtoS + MtoS + DtoS + "17:00";
-                if (room4time.contains(booking1) & room4time.contains(booking2) & room4time.contains(booking3)) {
+                if (room4time.contains(booking1) || room4time.contains(booking2) || room4time.contains(booking3)) {
                     System.out.println("unfortunately the date and time has already been booked please enter in a new time and date");
                     System.out.println("The booking software will reset, and you will need to enter your details again, Sorry, Thank you");
                     createabooking();
@@ -1210,7 +1210,7 @@ public class ResourceBookingSystem {
                 String booking1 = YtoS + MtoS + DtoS + "10:30";
                 String booking2 = YtoS + MtoS + DtoS + "14:30";
                 String booking3 = YtoS + MtoS + DtoS + "17:00";
-                if (room5time.contains(booking1) & room5time.contains(booking2) & room5time.contains(booking3)) {
+                if (room5time.contains(booking1) || room5time.contains(booking2) || room5time.contains(booking3)) {
                     System.out.println("unfortunately the date and time has already been booked please enter in a new time and date");
                     System.out.println("The booking software will reset, and you will need to enter your details again, Sorry, Thank you");
                     createabooking();
